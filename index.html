@@ -26,99 +26,101 @@
 
   <!-- Main Area Start  -->
   <main class="mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7">
-          <div class="left-img">
-            <img src="./images/money.jpg" alt="money" />
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="left-img">
+              <img src="./images/money.jpg" alt="money" />
+            </div>
           </div>
-        </div>
-        <div class="col-lg-5">
-          <div id="money-manager" class="money-manager-area mt-5 mt-md-0 text-center">
-            <div class="income-area">
-              <h3 class="title">Income</h3>
-              <table>
-                <tr>
-                  <td>Income</td>
-                  <td>
-                    <input id="income-button" type="text" value="0" />
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- /.income-area end-->
-            <div class="expense-area">
-              <h3 class="title">Expense</h3>
-              <table>
-                <tr>
-                  <td>Food</td>
-                  <td><input id="food-button" type="text" value="0" /></td>
-                </tr>
-                <tr>
-                  <td>Rent</td>
-                  <td><input id="rent-button" type="text" value="0" /></td>
-                </tr>
-                <tr>
-                  <td>Cloths</td>
-                  <td><input id="cloths-button" type="text" value="0" /></td>
-                </tr>
-              </table>
-            </div>
-            <!-- /.expense-area end -->
-            <button id="calculate-button" class="calc-btn btn-success rounded-3 px-4 py-1">
-              Calculate
-            </button>
-            <div class="result-area">
-              <h3 class="title">
-                Total Expenses: <span id="expense-total">0</span>
-              </h3>
-              <h3 class="title">Balance: <span id="balance">0</span></h3>
-            </div>
-            <!-- /.result-area end -->
-            <div class="save-area">
-              <table>
-                <tr>
-                  <td>Save</td>
-                  <td>
-                    <input id="percentage-button" type="text" value="0" />
-                  </td>
-                  <td>%</td>
-                  <td>
-                    <button id="save-btn" onclick="savingRemainBalance()"
-                      class="save-btn btn btn-success rounded-3 px-4 py-1">
-                      Save
-                    </button>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- /.save-area end -->
-            <div class="save-remain-area">
-              <h3 class="title">
-                Saving Amount: <span id="saving-amount">0</span>
-              </h3>
-              <h3 class="title">
-                Remaining Balance: <span id="remain-balance">0</span>
-              </h3>
+          <div class="col-lg-5">
+            <div id="money-manager" class="money-manager-area mt-5 mt-md-0 text-center">
+              <div class="income-area">
+                <h3 class="title">Income</h3>
+                <table>
+                  <tr>
+                    <td>Income</td>
+                    <td>
+                      <input id="income-button" type="text" value="0" />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- /.income-area end-->
+              <div class="expense-area">
+                <h3 class="title">Expense</h3>
+                <table>
+                  <tr>
+                    <td>Food</td>
+                    <td><input id="food-button" type="text" value="0" /></td>
+                  </tr>
+                  <tr>
+                    <td>Rent</td>
+                    <td><input id="rent-button" type="text" value="0" /></td>
+                  </tr>
+                  <tr>
+                    <td>Cloths</td>
+                    <td><input id="cloths-button" type="text" value="0" /></td>
+                  </tr>
+                </table>
+              </div>
+              <!-- /.expense-area end -->
+              <button id="calculate-button" class="calc-btn btn-success rounded-3 px-4 py-1">
+                Calculate
+              </button>
+              <div class="result-area">
+                <h3 class="title">
+                  Total Expenses: <span id="expense-total">0</span>
+                </h3>
+                <h3 class="title">Balance: <span id="balance">0</span></h3>
+              </div>
+              <!-- /.result-area end -->
+              <div class="save-area">
+                <table>
+                  <tr>
+                    <td>Save</td>
+                    <td>
+                      <input id="percentage-button" type="text" value="0" />
+                    </td>
+                    <td>%</td>
+                    <td>
+                      <button id="save-btn" onclick="savingRemainBalance()"
+                        class="save-btn btn btn-success rounded-3 px-4 py-1">
+                        Save
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- /.save-area end -->
+              <div class="save-remain-area">
+                <h3 class="title">
+                  Saving Amount: <span id="saving-amount">0</span>
+                </h3>
+                <h3 class="title">
+                  Remaining Balance: <span id="remain-balance">0</span>
+                </h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="notify-section">
-      <p id="error-msg-save-money" class="notify">
-        Sorry! You need to more money to saving desired amount.
-      </p>
-      <p id="error-msg-exp" class="notify">
-        Sorry! You have no enough money to expense this amount.
-      </p>
-      <p id="error-msg-text" class="notify">
-        Sorry! You can provide input only by number.
-      </p>
-      <p id="error-msg-num" class="notify">
-        Sorry! Negative value is not allowed, Give positive number.
-      </p>
-    </div>
+      <div class="notify-section">
+        <p id="error-msg-save-money" class="notify">
+          Sorry! You need to more money to saving desired amount.
+        </p>
+        <p id="error-msg-exp" class="notify">
+          Sorry! You have no enough money to expense this amount.
+        </p>
+        <p id="error-msg-text" class="notify">
+          Sorry! You can provide input only by number.
+        </p>
+        <p id="error-msg-num" class="notify">
+          Sorry! Negative value is not allowed, Give positive number.
+        </p>
+      </div>
+    </section>
   </main>
   <!-- Main Area End  -->
 
