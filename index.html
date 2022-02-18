@@ -25,6 +25,106 @@
     </div>
   </header>
   <!-- Header Parts Ends -->
+  <!-- Main Parts Starts -->
+  <main class="mb-5">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="left">
+              <img src="./images/money.jpg" alt="Money">
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div id="money" class="money-manager mt-5 mt-md-0 text-center">
+              <div class="income">
+                <h3 class="heading">Income</h3>
+                <table>
+                  <tr>
+                    <td>Income : </td>
+                    <td>
+                      <input type="text" id="income-button" value="0">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Expense Area -->
+              <div class="expense">
+                <h3 class="heading">Expense</h3>
+                <table>
+                  <tr>
+                    <td>Food : </td>
+                    <td>
+                      <input type="text" id="food-button" value="0">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Rent : </td>
+                    <td>
+                      <input type="text" id="rent-button" value="0">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Cloths :</td>
+                    <td>
+                      <input type="text" id="cloths-button" value="0">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Expense Parts Ends -->
+              <button id="calculate-button" class="calc-button btn-dark rounded-3 px-4 py-1">Calculate</button>
+              <!-- result Parts Starts -->
+              <div class="result">
+                <h3 class="heading">Total Expenses : <span id="expense-total">0</span> </h3>
+                <h3 class="title">Balance: <span id="balance">0</span></h3>
+              </div>
+              <!-- result Parts Ends -->
+              <!-- save Parts Starts -->
+              <div class="save">
+                <table>
+                  <tr>
+                    <td>Save :</td>
+                    <td>
+                      <input type="text" id="percentage-button" value="0">
+                    </td>
+                    <td>%</td>
+                    <td>
+                      <button id="save-button" class="save-btn btn btn-dark rounded-3 px-4 py-1">Save</button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!-- Save Parts Ends -->
+              <!-- save remain Starts -->
+              <div class="remain-area">
+                <h3 class="heading">Saving Amount : <span id="amount-button">0</span> </h3>
+                <h3 class="title">
+                  Remaining Balance: <span id="remaining-balance">0</span></h3>
+              </div>
+              <!-- save remain Endss -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Error Message Handleing -->
+      <div class="notify">
+        <p id="error-save-money" class="notify-msg">
+          Sorry! You need to more money to saving desired amount.
+        </p>
+        <p id="error-exp" class="notify-msg">
+          Sorry! You have no enough money to expense this amount.
+        </p>
+        <p id="error-text" class="notify-msg">
+          Sorry! You can provide input only by number.
+        </p>
+        <p id="error-num" class="notify-msg">
+          Sorry! Negative value is not allowed, Give positive number.
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- Main Parts Ends -->
   <!-- script link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
